@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["configuration.dev.config.json"],"sourcesContent":["{\n  \"name\": \"welcomeToSite\",\n  \"deps\": false,\n  \"wrap\": false,\n  \"constants\": {\n    \"hello\": \"hello\"\n  }\n}\n"],"file":"configuration.dev.config.js"}

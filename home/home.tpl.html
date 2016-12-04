@@ -1,0 +1,28 @@
+
+<div id="filebrowser" ondragstart="return false;" ng-cloak>
+  <angular-filemanager disable-animate></angular-filemanager>
+</div>
+<div id="account-services" enable-animate ng-cloak>
+  <md-fab-speed-dial class="md-scale" md-direction="up" md-open="home.accountServicesMenuOpen">
+    <md-fab-trigger>
+      <md-button class="md-fab md-primary" aria-label="Account Services">
+        <md-tooltip md-direction="left" md-visible="tooltipVisible">Account Services</md-tooltip>
+        <md-icon>person</md-icon>
+      </md-button>
+    </md-fab-trigger>
+    <md-fab-actions>
+      <md-button class="md-fab md-raised" ng-click="home.showLogout($event)" aria-label="Sign Out">
+        <md-tooltip md-direction="left" md-visible="tooltipVisible">Sign Out</md-tooltip>
+        <md-icon>exit_to_app</md-icon>
+      </md-button><a ui-sref="changepassword">
+        <md-button class="md-fab md-raised" aria-label="Change Password">
+          <md-tooltip md-direction="left" md-visible="tooltipVisible">Change Password</md-tooltip>
+          <md-icon>lock</md-icon>
+        </md-button></a><a ui-sref="/manageusers" ng-show="home.isAdmin">
+        <md-button class="md-fab md-raised" aria-label="Manage Users">
+          <md-tooltip md-direction="left" md-visible="tooltipVisible">Manage Users</md-tooltip>
+          <md-icon>people</md-icon>
+        </md-button></a>
+    </md-fab-actions>
+  </md-fab-speed-dial>
+</div>
